@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment
+.env
+
+# SSH key
+*.pem
+
+# Docker
+*.log
+*.pid
+*.tar
+*.sock
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# VS Code
+.vscode/
+
+# System
+.DS_Store
+Thumbs.db
