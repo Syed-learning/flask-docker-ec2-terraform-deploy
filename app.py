@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
@@ -12,8 +13,15 @@ def feedback():
         name = request.form['name']
         message = request.form['message']
 
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        feedback_file = os.path.join(base_dir, "feedback.txt")
+
+
+
         with open('feedback.txt', 'a') as f:
             f.write(f"Name: {name}\nMessage: {message}\n---\n")
+        
+        
 
         return redirect('/feedback')
     
