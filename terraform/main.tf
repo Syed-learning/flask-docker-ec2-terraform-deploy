@@ -12,7 +12,7 @@ resource "aws_instance" "flask_instance" {
   associate_public_ip_address = true
   user_data                   = file("ec2-userdata.sh")
 
-  vpc_security_group_ids = ["sg-0d33bd91e0e80bc1a"]  # ✅ Using existing security group
+  vpc_security_group_ids = ["sg-01d1cee508cd6dbd7"]  
 
   tags = {
     Name = "flask-docker-instance"

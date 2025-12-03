@@ -5,6 +5,7 @@ __pycache__/
 
 # Environment
 .env
+venv/
 
 # SSH key
 *.pem
@@ -19,7 +20,7 @@ __pycache__/
 *.tfstate
 *.tfstate.*
 .terraform/
-
+terraform.tfvars
 # VS Code
 .vscode/
 
